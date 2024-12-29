@@ -1,4 +1,5 @@
 GOAL: the redis database should display the Telegram ID and Wallet Address of users who added their crypto wallet 
+the code is in: TompesConnect_tirdyweb\src\components
 
 Start Redis Database 
 Start ngrok (.\ngrok http 3000)
