@@ -1,0 +1,190 @@
+/* ===== Общие стили ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+
+  /* Фоновое изображение */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fortunetrust-bank.appspot.com/o/%D1%8B%D0%B2.png?alt=media&token=3f249d5b-037f-45a9-93f9-caf012c89ade");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; /* Используем Flexbox для центрирования */
+  justify-content: center; /* Центровка по горизонтали */
+  align-items: center; /* Центровка по вертикали */
+  overflow: hidden;
+}
+
+/* ===== Контейнер обертки ===== */
+.wrapper {
+  display: flex;
+  justify-content: center; /* Центровка содержимого по горизонтали */
+  align-items: center; /* Центровка содержимого по вертикали */
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ===== Основной контейнер ===== */
+.container {
+  background: linear-gradient(135deg, #772A1F, #BB6E3F);
+  padding: 20px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.6);
+  margin: auto; /* Центровка блока */
+}
+
+/* ===== Картинка внутри контейнера ===== */
+.info-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #fff;
+  margin-bottom: 12px;
+}
+
+/* ===== Заголовок ===== */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* ===== Описание ===== */
+.description {
+  font-size: 14px;
+  color: #f3f3f3;
+  margin-bottom: 32px;
+}
+
+/* ===== Текст успешного подключения ===== */
+.success-text {
+  font-size: 14px;
+  color: #d4f4dd;
+  margin-bottom: 16px;
+}
+
+/* ===== Ошибка ===== */
+.error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===== Кнопка WalletConnect ===== */
+.walletconnect-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFDC73, #FFC107);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(255, 193, 7, 0.6);
+}
+
+.walletconnect-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 16px rgba(255, 193, 7, 0.8);
+}
+
+/* ===== Кнопка Metamask ===== */
+.wallet-button-metamask {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(255, 152, 0, 0.6);
+}
+
+.wallet-button-metamask:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(255, 152, 0, 0.8);
+  background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+/* ===== Кнопка Trust Wallet ===== */
+.wallet-button-trustwallet {
+  display: inline-block;
+  background: linear-gradient(135deg, #4A90E2, #1976D2);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(25, 118, 210, 0.6);
+}
+
+.wallet-button-trustwallet:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(25, 118, 210, 0.8);
+  background: linear-gradient(135deg, #1976D2, #1565C0);
+}
+
+/* Telegram / Continue */
+.telegram-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFDC73, #FFC107);
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(255, 193, 7, 0.6);
+}
+
+.telegram-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 16px rgba(255, 193, 7, 0.8);
+}
+
+/* ===== Ряд кнопок ===== */
+.buttons-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+/* ===== Адаптация для больших экранов ===== */
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: 100% auto;
+  }
+}
+
+/* ===== Адаптация для очень широких экранов ===== */
+@media screen and (min-width: 1920px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
